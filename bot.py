@@ -53,7 +53,7 @@ def kirim_pesan(id,teks):
 	}
 	get(url+'sendMessage',params=data)
 
-
+#sip
 @otakBot.route('/',methods=['POST','GET'])
 def index():
 	if request.method == 'POST':
