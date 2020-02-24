@@ -35,7 +35,7 @@ def update(update):
 		kirim_pesan(id,f)
 	elif cm[0] == '/followersmartcrack':
 		for i in igtools.get_followets(cm[1]):
-			kirim_pesan(id,'%s %s'%(i,x))
+			kirim_pesan(id, igtools.smartcrack(i))
 	elif cm[0] == '/searchsmartcrack':
 		for i in igtools.search(cm[1]):
 				kirim_pesan(id,igtools.smartcrack(i))
@@ -73,7 +73,7 @@ def index():
 		update(data_update)
 		return "oke"
 	else:
-		return 'LAST VERSION'
+		return 'LAST VERSION V.K'
 
 if __name__ == '__main__':
 	otakBot.run(host='0.0.0.0',port=int(os.environ.get('PORT','5000')),debug=True)
