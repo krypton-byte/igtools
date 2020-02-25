@@ -132,7 +132,7 @@ def smartcrack(unem=""):
 			if azuuu == True:
 				return 'username : '+unem+"\npassword : "+passlur+"\nSukses"
 			else:
-				return 'username : '+unem+"\npassword : "+passlur+"\n Gagal"
+				return 0
 		except:
 			pass
 	return False
